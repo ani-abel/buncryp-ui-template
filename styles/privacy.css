@@ -1,0 +1,33 @@
+@import url("./base.css");
+.header {
+  background: url("../assets/images/buncryp-title-image-1.jpg") fixed no-repeat center center;
+}
+
+.page-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.page-content p:nth-of-type(1)::first-letter {
+  --font-size: 50px;
+  font-size: var(--font-size);
+  font-weight: 800;
+}
+
+@media (max-width: 576px) {
+  .page-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .page-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+}
+/*# sourceMappingURL=privacy.css.map */

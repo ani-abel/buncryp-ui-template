@@ -1,0 +1,59 @@
+@import url("./base.css");
+.header {
+  background: url("../assets/images/buncryp-title-image-2.jpg") fixed no-repeat center center;
+}
+
+.page-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.page-content p {
+  --font-size: 25px;
+  font-size: var(--font-size);
+}
+
+.default-address-section {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-row-gap: 30px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.default-address-section .contact-info-widget p {
+  padding-top: 10px;
+  --font-size: 20px;
+  font-size: var(--font-size);
+}
+
+@media (max-width: 576px) {
+  .page-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+  .default-address-section {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .page-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 10px;
+  }
+  .default-address-section {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=contact.css.map */
